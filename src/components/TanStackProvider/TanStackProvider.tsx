@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 
 export default function TanStackProvider({
   children,
@@ -12,12 +13,18 @@ export default function TanStackProvider({
     () =>
       new QueryClient({
         defaultOptions: {
-          queries: { refetchOnWindowFocus: false, retry: 1 },
+          queries: {
+            refetchOnWindowFocus: false,
+            retry: 1,
+          },
         },
       }),
   );
 
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      {children}
+      <Toaster position="top-right" />
+    </QueryClientProvider>
   );
 }

@@ -1,0 +1,30 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 60px;
+  text-align: center;
+}
+
+.image {
+  height: auto;
+}
+
+.title {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.text {
+  width: 351px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button {
+  width: 156px;
+  margin-top: 32px;
+}

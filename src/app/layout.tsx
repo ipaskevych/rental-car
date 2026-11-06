@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -20,7 +21,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={manrope.variable}>{children}</body>
+      <body className={manrope.variable}>
+        <TanStackProvider>{children}</TanStackProvider>
+      </body>
     </html>
   );
 }

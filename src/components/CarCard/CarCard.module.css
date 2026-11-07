@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  flex: 1;
   flex-direction: column;
   padding: 16px;
   border-radius: 16px;
@@ -54,6 +55,7 @@
 
 .details {
   margin-top: 8px;
+  margin-bottom: 24px;
   padding: 8px;
   border-radius: 8px;
   background-color: var(--color-bg-lighter);
@@ -79,5 +81,5 @@
 
 .button {
   width: 100%;
-  margin-top: 24px;
+  margin-top: auto;
 }

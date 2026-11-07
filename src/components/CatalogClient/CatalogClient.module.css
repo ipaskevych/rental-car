@@ -17,6 +17,9 @@
   column-gap: 32px;
   row-gap: 50px;
 }
+.grid > li {
+  display: flex;
+}
 
 .loadMore {
   width: 156px;

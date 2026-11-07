@@ -6,6 +6,10 @@
   margin: 0 auto;
   padding: 48px 0 100px;
 }
+.page {
+  min-height: calc(100vh - 68px);
+  background-color: var(--color-bg-lighter);
+}
 
 .left {
   display: flex;

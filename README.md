@@ -60,7 +60,7 @@ Backend documentation: https://car-rental-api.goit.study/api-docs/
 
 ## Deployment
 
-Live version: _add the Vercel link here_
+Live version: [Rental-Car](https://rental-car-murex-chi.vercel.app/)
 
 ## Author
 
